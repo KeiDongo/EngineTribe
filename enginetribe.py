@@ -110,7 +110,7 @@ async def static_file_proxy(filename: str) -> Response:
     if filename not in _static_file_cache:
         async with aiohttp.request(
                 method="GET",
-                url=f"http://www.enginetribe.gq/static/{filename}"
+                url=f"http://enginetribe.online/static/{filename}"
         ) as response:
             if response.status != 200:
                 return Response(status_code=404)
@@ -129,7 +129,7 @@ async def readme_handler() -> FileResponse:
 
 @app.get("/docs")
 async def docs_handler() -> RedirectResponse:
-    return RedirectResponse("http://www.enginetribe.gq/docs")
+    return RedirectResponse("http://enginetribe.online/docs")
 
 
 # get server status
