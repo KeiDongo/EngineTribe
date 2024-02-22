@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 xpinyin
 discord
 uvicorn
@@ -13,3 +14,20 @@ asyncmy
 redis>4.2.0
 loguru
 aiosqlite
+=======
+xpinyin
+discord
+uvicorn
+starlette<1.0
+fastapi
+pydantic
+python-multipart
+aiohttp
+pyyaml
+sqlalchemy[asyncio]
+greenlet
+asyncmy
+redis>4.2.0
+loguru
+aiosqlite
+>>>>>>> f8d95d9091658da9d76bde50de2c33dc255bf14d

@@ -1,8 +1,8 @@
 enginetribe:
-  host: '127.0.0.1'  # Engine Tribe server host
+  host: '0.0.0.0'  # Engine Tribe server host
   port: 30000  # Default port that SMM_WE uses
-  api_root: 'http://enginetribe.gq:30000/'  # Used in level links
-  api_key: "Y0UR_AP1_k3Y"  # Engine Bot API key
+  api_root: 'https://enginetribe-55rd.onrender.com/'  # Used in level links
+  api_key: "enginetribe"  # Engine Bot API key
   verify_user_agent: true  # Verify user agent
   rows_perpage: 32  # Levels per page
   upload_limit: 25  # Max levels per account
@@ -11,8 +11,8 @@ enginetribe:
   cors_allowed_origins: [ 'https://nmweb.enginetribe.gq', 'http://nmweb.enginetribe.gq' ]  # CORS allowed origins
 
 database:
-  adapter: 'mysql'  # Database adapter to use, mysql, postgresql and sqlite is supported
-  host: 'localhost'  # Database host (or file name when using sqlite)
+  adapter: 'sqlite'  # Database adapter to use, mysql, postgresql and sqlite is supported
+  host: 'database/database.db'  # Database host (or file name when using sqlite)
   port: 3306  # Database port
   user: 'enginetribe'  # Database user
   password: 'P455W0RD'  # Database password
@@ -21,7 +21,7 @@ database:
   debug: false  # Log SQL connections to stdout
 
 redis:
-  host: 'localhost'  # Redis host
+  host: '0.0.0.0'  # Redis host
   port: 6379  # Redis port
   database: 0  # Redis database
   password: 'P455W0RD'  # Redis password
@@ -46,5 +46,5 @@ push:
     enable_new_arrival: false  # Enable new level push
     urls: [ 'https://discord.com/api/webhooks/my_awesome_webhook' ]  # Discord webhook url
     avatar: 'https://raw.githubusercontent.com/EngineTribe/EngineBotDiscord/main/assets/engine-bot.png'
-    nickname: "Engine-bot"
-    server_name: "Engine Kingdom"
+    nickname: "Engine Tribe (LL)"
+    server_name: "test"
