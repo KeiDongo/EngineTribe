@@ -3,7 +3,7 @@ enginetribe:
   port: 30000  # Default port that SMM_WE uses
   api_root: 'https://enginetribe-55rd.onrender.com/'  # Used in level links
   api_key: "enginetribe"  # Engine Bot API key
-  verify_user_agent: true  # Verify user agent
+  verify_user_agent: false  # Verify user agent
   rows_perpage: 32  # Levels per page
   upload_limit: 25  # Max levels per account
   booster_extra_limit: 10  # Privileges of boosters
@@ -21,17 +21,17 @@ database:
   debug: false  # Log SQL connections to stdout
 
 redis:
-  host: '0.0.0.0'  # Redis host
+  host: 'localhost'  # Redis host
   port: 6379  # Redis port
   database: 0  # Redis database
-  password: 'P455W0RD'  # Redis password
+  #password: 'P455W0RD.'  # Redis password
 
 storage:
   provider: 'database'  # Storage provider to use, onemanager, onedrive-cf and database are supported now
   # database: use database to store levels  (recommended)
   # onedrive-cf: https://github.com/spencerwooo/onedrive-cf-index
   # onemanager: https://github.com/qkqpttgf/OneManager-php
-  url: 'http://enginetribe.gq:30000/'  # Storage url with '/'
+  url: 'https://enginetribe-55rd.onrender.com/'  # Storage url with '/'
   auth_key: ''  # Storage auth key, onedrive-cf and onemanager only
   proxied: true  # Proxy levels via CloudFlare CDN, onedrive-cf only
 

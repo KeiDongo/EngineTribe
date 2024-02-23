@@ -71,7 +71,6 @@ class User(Base):
     is_booster = Column(Boolean)  # Is booster
     is_valid = Column(Boolean)  # Is account valid (Engine-bot determines whether account is still in the QQ group)
     is_banned = Column(Boolean)  # Is account banned
-    token = Column(String(9))  # Client
 
 
 class LevelData(Base):  # used in StorageProviderDatabase

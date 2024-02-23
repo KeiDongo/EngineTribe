@@ -26,7 +26,7 @@ class Database:
             case _:
                 raise ValueError('Invalid database adapter')
         url: str = f'sqlite+aiosqlite:///database/database.db'
-        #url: str = f'{database_type}://{DATABASE_USER}:{DATABASE_PASS}@{DATABASE_HOST}:{DATABASE_PORT}/{DATABASE_NAME}'
+        # url: str = f'{database_type}://{DATABASE_USER}:{DATABASE_PASS}@{DATABASE_HOST}:{DATABASE_PORT}/{DATABASE_NAME}'
         if DATABASE_SSL:
             ssl_ctx = ssl.create_default_context(cafile="/etc/ssl/certs/ca-certificates.crt")
             ssl_ctx.verify_mode = ssl.CERT_REQUIRED

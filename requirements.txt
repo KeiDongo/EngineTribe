@@ -1,4 +1,4 @@
-xpinyin
+gitxpinyin
 discord
 uvicorn
 starlette<1.0
@@ -25,6 +25,6 @@ pyyaml
 sqlalchemy[asyncio]
 greenlet
 asyncmy
-redis>4.2.0
+redis>4º.2.0
 loguru
 aiosqlite

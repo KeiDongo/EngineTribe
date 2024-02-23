@@ -135,9 +135,9 @@ async def docs_handler() -> RedirectResponse:
 # get server status
 @app.get("/server_stats")
 async def server_stats(
-        
         request: Request,
         dal: DBAccessLayer = Depends(create_dal)
+        
 ) -> dict:
     return {
         "os": platform.platform().replace('-', ' '),
