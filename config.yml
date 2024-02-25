@@ -1,18 +1,19 @@
 enginetribe:
   host: '0.0.0.0'  # Engine Tribe server host
   port: 30000  # Default port that SMM_WE uses
-  api_root: 'https://enginetribe-55rd.onrender.com/'  # Used in level links
+  api_root: 'https:api.enginetribe.online/'  # Used in level links
   api_key: "enginetribe"  # Engine Bot API key
   verify_user_agent: false  # Verify user agent
   rows_perpage: 32  # Levels per page
   upload_limit: 25  # Max levels per account
   booster_extra_limit: 10  # Privileges of boosters
   record_clear_users: true  # Record and display cleared users
-  cors_allowed_origins: [ 'https://nmweb.enginetribe.gq', 'http://nmweb.enginetribe.gq' ]  # CORS allowed origins
+  cors_allowed_origins: [ 'https://web.enginetribe.online', 'http://web.enginetribe.online' ]  # CORS allowed origins
 
 database:
   adapter: 'sqlite'  # Database adapter to use, mysql, postgresql and sqlite is supported
   host: 'database/database.db'  # Database host (or file name when using sqlite)
+  #timeout: 20
   port: 3306  # Database port
   user: 'enginetribe'  # Database user
   password: 'P455W0RD'  # Database password
@@ -21,17 +22,17 @@ database:
   debug: false  # Log SQL connections to stdout
 
 redis:
-  host: 'localhost'  # Redis host
+  host: '0.0.0.0'  # Redis host
   port: 6379  # Redis port
-  database: 0  # Redis database
-  #password: 'P455W0RD.'  # Redis password
+  database: 1  # Redis database
+  password: 'si'  # Redis password
 
 storage:
   provider: 'database'  # Storage provider to use, onemanager, onedrive-cf and database are supported now
   # database: use database to store levels  (recommended)
   # onedrive-cf: https://github.com/spencerwooo/onedrive-cf-index
   # onemanager: https://github.com/qkqpttgf/OneManager-php
-  url: 'https://enginetribe-55rd.onrender.com/'  # Storage url with '/'
+  url: 'https://api.enginetribe.online/'  # Storage url with '/'
   auth_key: ''  # Storage auth key, onedrive-cf and onemanager only
   proxied: true  # Proxy levels via CloudFlare CDN, onedrive-cf only
 
