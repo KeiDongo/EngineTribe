@@ -21,7 +21,7 @@ Currently, the project is in maintenance mode and will not receive any functiona
 ### 📗 Documents
 
 [View Engine Tribe documents
-](http://www.enginetribe.gq/docs/#)
+](http://www.enginetribe.online/docs/#)
 
 ---
 
