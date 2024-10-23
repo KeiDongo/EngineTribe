@@ -15,6 +15,7 @@ Congratulations, your **Engine Tribe** instance is working!
 - 🌐 Localization, multi-client and multi-IM support
 - ☁ Local database, OneDrive or Discord storage provider
 - 🗄️ Async MySQL, PostgreSQL or SQLite database
+- Hablame lesbianita 👏
 
 ### 📗 Documents
 
